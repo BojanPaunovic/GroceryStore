@@ -21,12 +21,27 @@
             border-radius: 3px;
             font-size:40px;
         }
+        button{
+            font-size:25px;
+            font-weight:bold;
+            border:3px solid goldenrod;
+            border-radius:4px;
+        }
     </style>
 </head>
 <body>
+    <button id="backBtn">Go back <<<</button>
     <div class="thankYou">
         <span>Thank you for shopping with us!</span><br><br>
         <span>We hope to see you again!</span>
     </div>
+
+    <script>
+        let backBtn = document.querySelector('#backBtn');
+
+        backBtn.addEventListener('click', () => {
+            location.href = "shop.html";
+        })
+    </script>
 </body>
 </html>
