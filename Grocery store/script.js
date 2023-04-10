@@ -13,7 +13,6 @@ function redirect1() {
 
 function redirect2() {
     location.href="thankyou.html";
-    
 }
 
 
@@ -32,6 +31,11 @@ let price = {
     yellowOn : 130,
     redOn : 160
 };
+
+// Preuzmi vrednosti iz svakog span elementa
+itemName.forEach((x) => {
+    console.log(x.innerHTML);
+});
 
 let totalPrice = 0;
 function calculateTotalPrice(x) {
