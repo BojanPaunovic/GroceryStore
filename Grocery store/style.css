@@ -195,8 +195,11 @@ li h3:first-child{
 }
 
 #proceed{
-    font-size:20px;
+    font-size:22px;
     margin:auto;
-    background-color:aquamarine;
+    background-color:white;
+    border:3px solid goldenrod;
+    border-radius:3px;
     font-weight:bold;
 }
+
