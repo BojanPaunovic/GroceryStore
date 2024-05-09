@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grocery store</title>
+    <style>
+        #backBtn{
+            font-size:25px;
+            font-weight:bold;
+            border:3px solid goldenrod;
+            border-radius:4px;
+        }
+    </style>
+</head>
+<body>
+    <button id="backBtn">Go back <<<</button>
+    <div class="budgetShow">
+        <h2>Your shopping budget:<br><span id="budgetValue"></span></h2>
+    </div>
+
+    <div class="items1">
+        <div class="single-item">
+            <img src="img/cucumber.jpg" alt="">
+            <span id="itemName">Cucumber</span>
+            <span>KG = 200RSD</span> <br>
+            <h3>Quantity:</h3>
+            <input type="number" id="quantityCucumber" min="0.5">kg
+            <br>
+            <button id="cucumberSubmit">ADD</button>
+        </div>
+        &nbsp;&nbsp;
+        <div class="single-item">
+            <img src="img/tomato.jpeg" alt="">
+            <span id="itemName">Tomato</span>
+            <span>KG = 320RSD</span> <br>
+            <h3>Quantity:</h3>
+            <input type="number" id="quantityTomato" min="0.5">kg
+            <br>
+            <button id="tomatoSubmit">ADD</button>
+        </div>
+        &nbsp;&nbsp;
+        <div class="single-item">
+            <img src="img/broccoli.jpg" alt="">
+            <span id="itemName">Broccoli</span>
+            <span>KG = 400RSD</span> <br>
+            <h3>Quantity:</h3>
+            <input type="number" id="quantityBroccoli" min="0.5">kg
+            <br>
+            <button id="broccoliSubmit">ADD</button>
+        </div>
+    </div>
+
+    <div class="items2">
+        <div class="single-item">
+            <img src="img/mushrooms.jpg" alt="">
+            <span id="itemName">Mushrooms</span>
+            <span>KG = 300RSD</span> <br>
+            <h3>Quantity:</h3>
+            <input type="number" id="quantityMushrooms" min="0.5">kg
+            <br>
+            <button id="mushroomsSubmit">ADD</button>
+        </div>
+        &nbsp;&nbsp;
+        <div class="single-item">
+            <img src="img/yellow_onion.jpg" alt="">
+            <span id="itemName">Yellow onion</span>
+            <span>KG = 130RSD</span> <br>
+            <h3>Quantity:</h3>
+            <input type="number" id="quantityYellowOn" min="0.5">kg
+            <br>
+            <button id="yellowOnSubmit">ADD</button>
+        </div>
+        &nbsp;&nbsp;
+        <div class="single-item">
+            <img src="img/red_onion.jpg" alt="">
+            <span id="itemName">Red onion</span>
+            <span>KG = 160RSD</span> <br>
+            <h3>Quantity:</h3>
+            <input type="number" id="quantityRedOn" min="0.5">kg
+            <br>
+            <button id="redOnSubmit">ADD</button>
+        </div>
+    </div>
+
+    <hr id="hr2">
+
+    <div class="cartItems">
+        <h2 id="shoppingCarth2">Your shopping cart<br>↓</h2> <br><br>
+        <ul id="list"></ul>
+
+        <br>
+        <button id="clearAll" onclick="clearAll()">Clear All</button><br><br>
+        <h2 id="totPriceh2">Total price:</h2>
+        <span id="totalPrice"></span><br>
+        <span id="check"></span> <br><br>
+        <button id="proceed" onclick="redirect2()">Proceed to payment</button>
+        <br><br>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let backBtn = document.querySelector('#backBtn');
+
+        backBtn.addEventListener('click', () => {
+            location.href = "index.html";
+        })
+    </script>
+</body>
+</html>
